@@ -1,6 +1,6 @@
 # Desafio Técnico React + Vite
 
-## Desenvolva uma tela de sistema de tickets utilizando React. A tela deve conter uma tabela dinâmica que exibe uma lista de tickets com funcionalidades básicas de gerenciamento. O objetivo é avaliar sua capacidade de trabalhar com componentes interativos, estado, organização de código, e boas práticas.
+Desenvolva uma tela de sistema de tickets utilizando React. A tela deve conter uma tabela dinâmica que exibe uma lista de tickets com funcionalidades básicas de gerenciamento. O objetivo é avaliar sua capacidade de trabalhar com componentes interativos, estado, organização de código, e boas práticas.
 
 ## Meta: 23/05/2025
 
