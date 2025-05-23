@@ -6,11 +6,11 @@ export default function TicketTableRow({ ticket, handleStatusChange, onOpen }) {
     const [isEditing, setIsEditing] = useState(false)
     return (
         <tr className="border-b border-gray-400"> 
-            <td   className="p-4 ">
+            <td   className="p-4 md:p-2 ">
                 {ticket.id}
             </td>
-            <td onClick={() => onOpen(ticket)} className="p-4 hover:underline cursor-pointer">{ticket.title}</td>
-            <td className="p-4 relative group">
+            <td onClick={() => onOpen(ticket)} className="p-4 md:p-2 hover:underline cursor-pointer">{ticket.title}</td>
+            <td className="p-4 md:p-2 relative group">
                 {isEditing ? (
                     <select
                         value={ticket.status}
@@ -40,7 +40,7 @@ export default function TicketTableRow({ ticket, handleStatusChange, onOpen }) {
                     </>
                 )}
             </td>
-            <td className="p-4">{ticket.lastUpdated}</td>
+            <td className="p-4 md:p-2">{ticket.lastUpdated}</td>
         </tr>         
     );
 }

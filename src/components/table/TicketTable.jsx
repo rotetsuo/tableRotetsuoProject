@@ -4,6 +4,7 @@ import statusOptions from '../../data/statusOptions.json';
 import { useState } from "react";
 import RightPanel from "../ui/RightPanel";
 
+
 export default function TicketTable( {filterStatus} ) {
     
     const [ticketList, setTicketList] = useState(tickets);
@@ -36,15 +37,15 @@ export default function TicketTable( {filterStatus} ) {
     : ticketList.filter(ticket => ticket.status === filterStatus);
 
     return (
-        <div className="bg-white dark:bg-[#1f1f1f] grid mt-15">
-    
-            <table className="table-fixed  text-left">
+        <div className="bg-white dark:bg-[#1f1f1f] grid mt-15 overflow-x-auto">
+           
+            <table className="table-fixed  text-left text-sm">
                 <thead className="bg-[#007aff] text-[#E8E8E8]">
                     <tr>
-                        <th className="w-25 p-4">ID</th>
-                        <th className="w-25 p-4">Titulo</th>
-                        <th className="w-25 p-4">Status</th>
-                        <th className="w-25 p-4">Última Atualização</th>
+                        <th className="w-25 md:w-20 lg:p-4 md:p-2 p-1">ID</th>
+                        <th className="w-25 md:w-30 lg:p-4 md:p-2 p-1">Titulo</th>
+                        <th className="w-25 md:w-25 lg:p-4 md:p-2 p-1">Status</th>
+                        <th className="w-25 md:w-25 lg:p-4 md:p-2 p-1">Última Atualização</th>
                     </tr>
                 </thead>
                 <tbody>

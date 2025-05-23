@@ -23,7 +23,7 @@ function App() {
     <>
       <Header changeTheme={changeTheme} darkTheme={darkTheme} />
 
-      <main className="min-h-screen bg-white dark:bg-[#1f1f1f]  text-gray-950 dark:text-white pt-16 gap-26 px-30 pt-50">
+      <main className="min-h-screen max-w-screen bg-white dark:bg-[#1f1f1f]  text-gray-950 dark:text-white lg:pt-40 md:pt-30 pt-28 lg:px-30 md:px-10 px-1">
         <TicketFilter
           filterStatus={filterStatus}
           onFilterChange={setFilterStatus}
