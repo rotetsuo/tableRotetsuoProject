@@ -1,8 +1,9 @@
 import TicketTableRow from "./TicketTableRow";
 import tickets from '../../data/tickets.json';
+import statusOptions from '../../data/statusOptions.json';
 
 export default function TicketTable( {filterStatus} ) {
-    const filteredTickets = filterStatus === 'Todos'
+    const filteredTickets = filterStatus === statusOptions[0].value
     ? tickets
     : tickets.filter(ticket => ticket.status === filterStatus);
 

@@ -15,20 +15,20 @@ export default function DropdownFilter({ value, onChange, options }) {
             <MenuItems transition className="z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black/5 transition focus:outline-hidden data-closed:scale-95 sata-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in" >
                 <div className="py-1">
                    {options.map((option) => (
-                    <MenuItem>
-  {({ active }) => (
-    <button
-      onClick={() => onChange(option)}
-      className={`w-full text-left px-4 py-2 text-sm ${
-        active
-          ? 'bg-gray-100 text-gray-900'
-          : 'text-gray-700 dark:text-white'
-      }`}
-    >
-      {option}
-    </button>
-  )}
-</MenuItem>
+                        <MenuItem>
+                            {({ active }) => (
+                                <button
+                                onClick={() => onChange(option)}
+                                className={`w-full text-left px-4 py-2 text-sm ${
+                                    active
+                                    ? 'bg-gray-100 text-gray-900'
+                                    : 'text-gray-700 dark:text-white'
+                                }`}
+                                >
+                                {option}
+                                </button>
+                            )}
+                        </MenuItem>
                     ))}
                    
                 </div>

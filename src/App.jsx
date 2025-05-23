@@ -3,10 +3,11 @@ import './App.css'
 import Header from  './components/Header'
 import TicketTable from './components/table/TicketTable';
 import TicketFilter from './components/TicketFilter';
+import statusOptions from './data/statusOptions.json';
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(true);
-  const [filterStatus, setFilterStatus] = useState("Todos");
+  const [filterStatus, setFilterStatus] =useState(statusOptions[0].value);
 
   useEffect(() => {
     if(darkTheme) {

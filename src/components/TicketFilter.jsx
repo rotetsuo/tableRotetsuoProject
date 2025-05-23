@@ -1,7 +1,7 @@
 import DropdownFilter from "./ui/DropdownFilter";
+import statusOptions from "../data/statusOptions.json";
 
 export default function TicketFilter( {filterStatus, onFilterChange} ) {
-    const options = ['Todos', 'Aberto', 'Em Progresso', 'Concluído'];
     return (
         <div>
             <h2>Filters</h2>
@@ -9,7 +9,7 @@ export default function TicketFilter( {filterStatus, onFilterChange} ) {
             <DropdownFilter 
                 value={filterStatus}
                 onChange={onFilterChange}
-                options={options}
+                options={statusOptions.map((option) => option.label)}
             />
 
         </div>

@@ -1,0 +1,6 @@
+[
+  { "label": "Todos", "value": "Todos" },
+  { "label": "Aberto", "value": "Aberto" },
+  { "label": "Em Progresso", "value": "Em Progresso" },
+  { "label": "Concluído", "value": "Concluído" }
+]
