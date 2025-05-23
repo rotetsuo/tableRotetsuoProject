@@ -1,6 +1,6 @@
 import TicketTableRow from "./TicketTableRow";
 import tickets from '../../data/tickets.json';
-import statusOptions from '../../data/statusOptions.json';
+import filterStatusOptions from '../../data/filterStatusOptions.json';
 import { useState } from "react";
 import RightPanel from "../ui/RightPanel";
 
@@ -32,7 +32,7 @@ export default function TicketTable( {filterStatus} ) {
 
     
     
-    const filteredTickets = filterStatus === statusOptions[0].value
+    const filteredTickets = filterStatus === filterStatusOptions[0].value
     ? ticketList
     : ticketList.filter(ticket => ticket.status === filterStatus);
 
