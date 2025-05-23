@@ -1,11 +1,23 @@
 import TicketTableRow from "./TicketTableRow";
 import tickets from '../../data/tickets.json';
 import statusOptions from '../../data/statusOptions.json';
+import { useState } from "react";
 
 export default function TicketTable( {filterStatus} ) {
+    
+    const [ticketList, setTicketList] = useState(tickets);
+
+    const handleStatusChange = (id, newStatus) => {
+        const updated = ticketList.map((ticket) =>
+            ticket.id === id ? { ...ticket, status: newStatus } : ticket
+        );
+        setTicketList(updated);
+    };
+
+    
     const filteredTickets = filterStatus === statusOptions[0].value
-    ? tickets
-    : tickets.filter(ticket => ticket.status === filterStatus);
+    ? ticketList
+    : ticketList.filter(ticket => ticket.status === filterStatus);
 
     return (
         <div className="bg-white dark:bg-gray-800 grid ">
@@ -21,7 +33,11 @@ export default function TicketTable( {filterStatus} ) {
                 </thead>
                 <tbody>
                     {filteredTickets.map((ticket) => (
-                        <TicketTableRow key={ticket.id} ticket={ticket}/>
+                        <TicketTableRow 
+                            key={ticket.id} 
+                            ticket={ticket}
+                            handleStatusChange={handleStatusChange}
+                        />
                     ))}
                 </tbody>
             </table>
