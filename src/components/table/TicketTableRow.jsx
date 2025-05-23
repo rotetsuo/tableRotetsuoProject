@@ -19,7 +19,7 @@ export default function TicketTableRow({ ticket, handleStatusChange, onOpen }) {
                             setIsEditing(false); // fecha edição depois de mudar
                         }}
                         onBlur={() => setIsEditing(false)} // fecha ao perder o foco
-                        className="bg-gray-100 dark:bg-gray-700 text-black dark:text-white px-2 py-1 rounded"
+                        className="w-full bg-gray-100 dark:bg-gray-700 text-black dark:text-white px-2 py-1 rounded"
                         autoFocus
                     >
                         {statusOptions.map((opt) => (

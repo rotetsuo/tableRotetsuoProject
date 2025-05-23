@@ -4,7 +4,7 @@ import statusOptions from "../data/statusOptions.json";
 export default function TicketFilter( {filterStatus, onFilterChange} ) {
     return (
         <div>
-            <h2>Filters</h2>
+            <h2 className="px-1">Filtro:</h2>
 
             <DropdownFilter 
                 value={filterStatus}

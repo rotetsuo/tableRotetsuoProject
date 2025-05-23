@@ -36,10 +36,10 @@ export default function TicketTable( {filterStatus} ) {
     : ticketList.filter(ticket => ticket.status === filterStatus);
 
     return (
-        <div className="bg-white dark:bg-[#1f1f1f] grid ">
+        <div className="bg-white dark:bg-[#1f1f1f] grid mt-15">
     
             <table className="table-fixed  text-left">
-                <thead className="bg-white dark:bg-[#007aff]">
+                <thead className="bg-[#007aff] text-[#E8E8E8]">
                     <tr>
                         <th className="w-25 p-4">ID</th>
                         <th className="w-25 p-4">Titulo</th>
