@@ -1,4 +1,5 @@
 import TicketTableRow from "./TicketTableRow";
+import tickets from '../../data/tickets.json';
 
 export default function TicketTable() {
     return (
@@ -13,9 +14,9 @@ export default function TicketTable() {
                     </tr>
                 </thead>
                 <tbody>
-                    <TicketTableRow/>
-                    <TicketTableRow/>
-                    <TicketTableRow/>
+                    {tickets.map((ticket) => (
+                        <TicketTableRow key={ticket.id} ticket={ticket}/>
+                    ))}
                 </tbody>
             </table>
         </main>

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "0001",
+    "title": "Chrome não abre",
+    "status": "Aberto",
+    "lastUpdated": "22/05/2025"
+  },
+  {
+    "id": "0002",
+    "title": "Instalar dependencias",
+    "status": "Em Progresso",
+    "lastUpdated": "21/05/2025"
+  },
+  {
+    "id": "0003",
+    "title": "Impressora não imprime",
+    "status": "Concluído",
+    "lastUpdated": "17/05/2025"
+  },
+  {
+    "id": "0004",
+    "title": "VPN com defeito",
+    "status": "Em Progresso",
+    "lastUpdated": "12/05/2025"
+  },
+  {
+    "id": "0005",
+    "title": "Computador molhado",
+    "status": "Aberto",
+    "lastUpdated": "12/05/2025"
+  },
+  {
+    "id": "0006",
+    "title": "Internet lenta",
+    "status": "Concluído",
+    "lastUpdated": "12/05/2025"
+  },
+  {
+    "id": "0007",
+    "title": "Computador molhado",
+    "status": "Em Progresso",
+    "lastUpdated": "12/05/2025"
+  },
+  {
+    "id": "0008",
+    "title": "Computador molhado",
+    "status": "Em Progresso",
+    "lastUpdated": "12/05/2025"
+  },
+  {
+    "id": "0009",
+    "title": "Computador molhado",
+    "status": "Aberto",
+    "lastUpdated": "12/05/2025"
+  },
+  {
+    "id": "0010",
+    "title": "Computador molhado",
+    "status": "Concluído",
+    "lastUpdated": "12/05/2025"
+  },
+  {
+    "id": "0011",
+    "title": "Computador molhado",
+    "status": "Concluído",
+    "lastUpdated": "12/05/2025"
+  },
+  {
+    "id": "0012",
+    "title": "Computador molhado",
+    "status": "Concluído",
+    "lastUpdated": "12/05/2025"
+  },
+  {
+    "id": "0013",
+    "title": "Computador molhado",
+    "status": "Concluído",
+    "lastUpdated": "12/05/2025"
+  },
+  {
+    "id": "00014",
+    "title": "Computador molhado",
+    "status": "Concluído",
+    "lastUpdated": "12/05/2025"
+  }
+]
