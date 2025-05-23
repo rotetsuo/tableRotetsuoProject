@@ -3,7 +3,7 @@ import tickets from '../../data/tickets.json';
 
 export default function TicketTable() {
     return (
-        <div className="bg-white dark:bg-gray-800 grid pt-50">
+        <div className="bg-white dark:bg-gray-800 grid pt-50 gap-26 px-30 ">
             <table className="table-fixed  text-left">
                 <thead className="bg-white dark:bg-gray-700">
                     <tr>
