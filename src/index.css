@@ -11,3 +11,7 @@ html, body {
   padding: 0;
   background-color: transparent;
 }
+
+main{
+  min-height: 95vh;
+}
