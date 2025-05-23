@@ -3,9 +3,9 @@ import tickets from '../../data/tickets.json';
 
 export default function TicketTable() {
     return (
-        <main className="grid">
+        <div className="bg-white dark:bg-gray-800 grid pt-50">
             <table className="table-fixed  text-left">
-                <thead className="bg-gray-50 dark:bg-gray-700">
+                <thead className="bg-white dark:bg-gray-700">
                     <tr>
                         <th className="w-25 p-4">ID</th>
                         <th className="w-25 p-4">Titulo</th>
@@ -19,6 +19,6 @@ export default function TicketTable() {
                     ))}
                 </tbody>
             </table>
-        </main>
+        </div>
     );
 }
