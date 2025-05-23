@@ -1,9 +1,14 @@
 import TicketTableRow from "./TicketTableRow";
 import tickets from '../../data/tickets.json';
 
-export default function TicketTable() {
+export default function TicketTable( {filterStatus} ) {
+    const filteredTickets = filterStatus === 'Todos'
+    ? tickets
+    : tickets.filter(ticket => ticket.status === filterStatus);
+
     return (
-        <div className="bg-white dark:bg-gray-800 grid pt-50 gap-26 px-30 ">
+        <div className="bg-white dark:bg-gray-800 grid ">
+    
             <table className="table-fixed  text-left">
                 <thead className="bg-white dark:bg-gray-700">
                     <tr>
@@ -14,7 +19,7 @@ export default function TicketTable() {
                     </tr>
                 </thead>
                 <tbody>
-                    {tickets.map((ticket) => (
+                    {filteredTickets.map((ticket) => (
                         <TicketTableRow key={ticket.id} ticket={ticket}/>
                     ))}
                 </tbody>
