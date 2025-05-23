@@ -17,6 +17,19 @@ export default function TicketTable( {filterStatus} ) {
         setTicketList(updated);
     };
 
+    const handleAddComment = (id, commentText) => {
+        const updatedTickets = ticketList.map(ticket =>
+            ticket.id === id
+                ? { ...ticket, comments: [...(ticket.comments || []), commentText] }
+                : ticket
+        );
+        setTicketList(updatedTickets);
+
+        const updatedTicket = updatedTickets.find(t => t.id === id);
+            setSelectedTicket(updatedTicket);
+        };
+
+    
     
     const filteredTickets = filterStatus === statusOptions[0].value
     ? ticketList
@@ -49,6 +62,7 @@ export default function TicketTable( {filterStatus} ) {
                 open={!!selectedTicket}
                 onClose={() => setSelectedTicket(null)}
                 ticket={selectedTicket}
+                onAddComment={(text) => handleAddComment(selectedTicket.id, text)}
             />
         </div>
 

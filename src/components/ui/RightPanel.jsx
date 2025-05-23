@@ -2,8 +2,9 @@
 
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle, TransitionChild } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
+import TicketComments from './TicketComments'
 
-export default function RightPanel({ open, onClose, ticket }) {
+export default function RightPanel({ open, onClose, ticket, onAddComment }) {
 
   return (
     <Dialog open={open} onClose={onClose} className="relative z-10">
@@ -47,14 +48,10 @@ export default function RightPanel({ open, onClose, ticket }) {
                             <p><strong>Criado por:</strong> {ticket.creator}</p>            
                             <p><strong>Data de criação:</strong> {ticket.createdAt}</p>
                             <div className="mt-4">
-                                <h3 className="font-semibold mb-1">Comentários:</h3>
-                                    {ticket.comments?.length > 0 ? (
-                                        ticket.comments.map((comment, idx) => (
-                                            <p key={idx} className="mb-1">• {comment}</p>
-                                        ))
-                                    ) : (
-                                        <p>Nenhum comentário ainda.</p>
-                                    )}
+                                <TicketComments
+                                    comments={ticket.comments}
+                                    onAddComment={onAddComment}
+                                />                                    
                             </div>
                         </>
                         ) : (
