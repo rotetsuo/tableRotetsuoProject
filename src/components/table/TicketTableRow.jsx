@@ -2,12 +2,14 @@ import statusOptions from '../../data/statusOptions.json';
 import { PencilIcon } from '@heroicons/react/20/solid';
 import { useState } from 'react';
 
-export default function TicketTableRow({ ticket, handleStatusChange }) {
+export default function TicketTableRow({ ticket, handleStatusChange, onOpen }) {
     const [isEditing, setIsEditing] = useState(false)
     return (
         <tr className="border-b border-gray-400"> 
-            <td className="p-4">{ticket.id}</td>
-            <td className="p-4">{ticket.title}</td>
+            <td   className="p-4 ">
+                {ticket.id}
+            </td>
+            <td onClick={() => onOpen(ticket)} className="p-4 hover:underline cursor-pointer">{ticket.title}</td>
             <td className="p-4 relative group">
                 {isEditing ? (
                     <select

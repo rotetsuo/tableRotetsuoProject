@@ -2,10 +2,13 @@ import TicketTableRow from "./TicketTableRow";
 import tickets from '../../data/tickets.json';
 import statusOptions from '../../data/statusOptions.json';
 import { useState } from "react";
+import RightPanel from "../ui/RightPanel";
 
 export default function TicketTable( {filterStatus} ) {
     
     const [ticketList, setTicketList] = useState(tickets);
+
+    const [selectedTicket, setSelectedTicket] = useState(null);
 
     const handleStatusChange = (id, newStatus) => {
         const updated = ticketList.map((ticket) =>
@@ -20,10 +23,10 @@ export default function TicketTable( {filterStatus} ) {
     : ticketList.filter(ticket => ticket.status === filterStatus);
 
     return (
-        <div className="bg-white dark:bg-gray-800 grid ">
+        <div className="bg-white dark:bg-[#1f1f1f] grid ">
     
             <table className="table-fixed  text-left">
-                <thead className="bg-white dark:bg-gray-700">
+                <thead className="bg-white dark:bg-[#007aff]">
                     <tr>
                         <th className="w-25 p-4">ID</th>
                         <th className="w-25 p-4">Titulo</th>
@@ -37,10 +40,17 @@ export default function TicketTable( {filterStatus} ) {
                             key={ticket.id} 
                             ticket={ticket}
                             handleStatusChange={handleStatusChange}
+                            onOpen={(ticket => setSelectedTicket(ticket))}
                         />
                     ))}
                 </tbody>
             </table>
+            <RightPanel 
+                open={!!selectedTicket}
+                onClose={() => setSelectedTicket(null)}
+                ticket={selectedTicket}
+            />
         </div>
+
     );
 }
