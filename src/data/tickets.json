@@ -1,86 +1,80 @@
 [
   {
     "id": "0001",
-    "title": "Chrome não abre",
+    "title": "Erro na geração de arquivos",
     "status": "Aberto",
-    "lastUpdated": "22/05/2025"
+    "lastUpdated": "22/05/2025",
+    "description": "arquivos de vendas não estão sendo gerados corretamente.",
+    "creator": "Maria Oliveira",
+    "createdAt": "20/05/2025",
+    "comments": [
+      "Ticket criado por Maria.",
+      "Erro confirmado por João."
+    ]
   },
   {
     "id": "0002",
-    "title": "Instalar dependencias",
+    "title": "Integração com API externa",
     "status": "Em Progresso",
-    "lastUpdated": "21/05/2025"
+    "lastUpdated": "23/05/2025",
+    "description": "Integração com a API de pagamento está em andamento.",
+    "creator": "Carlos Souza",
+    "createdAt": "21/05/2025",
+    "comments": [
+      "Documentação recebida.",
+      "Autenticação em testes."
+    ]
   },
   {
     "id": "0003",
-    "title": "Impressora não imprime",
+    "title": "Atualização de layout do painel",
     "status": "Concluído",
-    "lastUpdated": "17/05/2025"
+    "lastUpdated": "19/05/2025",
+    "description": "O layout do painel de administração foi atualizado para seguir o novo padrão visual.",
+    "creator": "Ana Ribeiro",
+    "createdAt": "15/05/2025",
+    "comments": [
+      "Design aprovado.",
+      "Implementação finalizada."
+    ]
   },
   {
     "id": "0004",
-    "title": "VPN com defeito",
-    "status": "Em Progresso",
-    "lastUpdated": "12/05/2025"
+    "title": "Erro na geração de arquivos",
+    "status": "Aberto",
+    "lastUpdated": "22/05/2025",
+    "description": "arquivos de vendas não estão sendo gerados corretamente.",
+    "creator": "Maria Oliveira",
+    "createdAt": "20/05/2025",
+    "comments": [
+      "Ticket criado por Maria.",
+      "Erro confirmado por João."
+    ]
   },
   {
     "id": "0005",
-    "title": "Computador molhado",
-    "status": "Aberto",
-    "lastUpdated": "12/05/2025"
+    "title": "Integração com API externa",
+    "status": "Em Progresso",
+    "lastUpdated": "23/05/2025",
+    "description": "Integração com a API de pagamento está em andamento.",
+    "creator": "Carlos Souza",
+    "createdAt": "21/05/2025",
+    "comments": [
+      "Documentação recebida.",
+      "Autenticação em testes."
+    ]
   },
   {
     "id": "0006",
-    "title": "Internet lenta",
+    "title": "Atualização de layout do painel",
     "status": "Concluído",
-    "lastUpdated": "12/05/2025"
-  },
-  {
-    "id": "0007",
-    "title": "Computador molhado",
-    "status": "Em Progresso",
-    "lastUpdated": "12/05/2025"
-  },
-  {
-    "id": "0008",
-    "title": "Computador molhado",
-    "status": "Em Progresso",
-    "lastUpdated": "12/05/2025"
-  },
-  {
-    "id": "0009",
-    "title": "Computador molhado",
-    "status": "Aberto",
-    "lastUpdated": "12/05/2025"
-  },
-  {
-    "id": "0010",
-    "title": "Computador molhado",
-    "status": "Concluído",
-    "lastUpdated": "12/05/2025"
-  },
-  {
-    "id": "0011",
-    "title": "Computador molhado",
-    "status": "Concluído",
-    "lastUpdated": "12/05/2025"
-  },
-  {
-    "id": "0012",
-    "title": "Computador molhado",
-    "status": "Concluído",
-    "lastUpdated": "12/05/2025"
-  },
-  {
-    "id": "0013",
-    "title": "Computador molhado",
-    "status": "Concluído",
-    "lastUpdated": "12/05/2025"
-  },
-  {
-    "id": "00014",
-    "title": "Computador molhado",
-    "status": "Concluído",
-    "lastUpdated": "12/05/2025"
+    "lastUpdated": "19/05/2025",
+    "description": "O layout do painel de administração foi atualizado para seguir o novo padrão visual.",
+    "creator": "Ana Ribeiro",
+    "createdAt": "15/05/2025",
+    "comments": [
+      "Design aprovado.",
+      "Implementação finalizada."
+    ]
   }
 ]
